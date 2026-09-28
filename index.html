@@ -1,156 +1,897 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>A Guide to Enjoying Your Adelaide Backyard Pool Safely</title>
+  <title>Adelaide Pool Guide | Pool Care, Equipment & Backyard Tips</title>
 
-    <meta name="description"
-          content="Practical pool care and safety tips for Adelaide homeowners, including equipment checks, water care, lighting and backyard pool maintenance.">
+  <meta name="description"
+    content="Practical pool care, equipment, safety and backyard pool tips for homeowners in Adelaide, South Australia.">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
-            color: #333;
-        }
+  <meta name="robots" content="index, follow">
 
-        h1 {
-            line-height: 1.3;
-        }
+  <style>
+    :root {
+      --navy: #082b49;
+      --blue: #0879c9;
+      --cyan: #11b9df;
+      --aqua: #e9faff;
+      --ink: #173247;
+      --muted: #617587;
+      --white: #ffffff;
+      --line: #dbe8ef;
+      --shadow: 0 18px 50px rgba(8, 43, 73, 0.12);
+    }
 
-        h2 {
-            margin-top: 35px;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .intro {
-            font-size: 1.1rem;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #f8fcfe;
+      line-height: 1.7;
+    }
 
-        .note {
-            padding: 15px;
-            background: #f3f6f8;
-            border-radius: 8px;
-        }
-    </style>
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      background: var(--navy);
+      color: #dff7ff;
+      font-size: 13px;
+      padding: 9px 0;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 18px;
+      color: var(--navy);
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 26px;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: #38566a;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .navlinks a:hover {
+      color: var(--blue);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 70px 0 80px;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          #c9f5ff 0,
+          transparent 35%
+        ),
+        linear-gradient(135deg, #f2fcff, #ffffff);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #dff7ff;
+      color: #056b9c;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(40px, 5vw, 64px);
+      margin: 18px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    .hero-button {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 18px;
+      padding: 14px 21px;
+      border-radius: 14px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .hero-button:hover {
+      background: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      overflow: hidden;
+      border-radius: 28px;
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .image-caption {
+      padding: 13px 17px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      margin: 13px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 29px;
+      box-shadow: 0 8px 28px rgba(8, 43, 73, 0.06);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--aqua);
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* DARK SECTION */
+
+    .dark-section {
+      background: var(--navy);
+      color: white;
+    }
+
+    .dark-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .dark-section h2 {
+      color: white;
+      font-size: 38px;
+    }
+
+    .dark-section p {
+      color: #c9dce9;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 13px;
+    }
+
+    .check {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 15px 17px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 14px;
+    }
+
+    .check-mark {
+      color: #71e3ff;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    /* ARTICLE */
+
+    .article-section {
+      background: white;
+    }
+
+    .article {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .article h2 {
+      font-size: 30px;
+      margin-top: 42px;
+    }
+
+    .article p,
+    .article li {
+      color: #526b7b;
+    }
+
+    .article ul {
+      padding-left: 24px;
+    }
+
+    .callout {
+      margin: 32px 0;
+      padding: 25px;
+      border-left: 5px solid var(--cyan);
+      background: #effbfe;
+      border-radius: 0 16px 16px 0;
+    }
+
+    .callout a {
+      color: #006ca8;
+      font-weight: 800;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #061f35;
+      color: #c4d7e3;
+      padding: 48px 0;
+    }
+
+    footer h3 {
+      color: white;
+      margin-top: 0;
+    }
+
+    .footer-bottom {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #91adbd;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+
+      .hero-grid,
+      .dark-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .topbar .container {
+        display: block;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      .hero {
+        padding-top: 45px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <article>
+  <!-- TOP BAR -->
 
-        <h1>A Guide to Enjoying Your Adelaide Backyard Pool Safely</h1>
+  <div class="topbar">
+    <div class="container">
+      <span>Independent information for Adelaide pool owners</span>
+      <span>Pool Care • Equipment • Safety • Outdoor Living</span>
+    </div>
+  </div>
 
-        <p class="intro">
-            A backyard swimming pool can be one of the most enjoyable features
-            of an Adelaide home. Whether it is used for exercise, family time
-            or relaxing outdoors on a warm evening, regular care helps keep the
-            pool comfortable and ready to use.
-        </p>
 
-        <h2>Keep an Eye on Water Quality</h2>
+  <!-- HEADER -->
 
-        <p>
-            Clear-looking water is not the only sign of a well-maintained pool.
-            Adelaide homeowners should regularly monitor their pool's water
-            condition and follow the recommendations for their particular
-            pool and treatment system.
-        </p>
+  <header>
+    <nav class="container">
 
-        <p>
-            Regular cleaning, appropriate chemical management and good
-            circulation all contribute to a healthier swimming environment.
-        </p>
+      <a href="#" class="brand">
 
-        <h2>Check the Pool Equipment</h2>
-
-        <p>
-            The equipment behind a pool is just as important as the water
-            itself. Pumps, filters, heating systems and other components need
-            to operate properly for the pool to function as intended.
-        </p>
-
-        <p>
-            Pay attention to unusual noises, reduced circulation, leaks or
-            equipment that suddenly behaves differently from normal. These
-            changes can be useful warning signs that an inspection may be
-            worthwhile.
-        </p>
-
-        <h2>Don't Forget the Pool Surrounds</h2>
-
-        <p>
-            Leaves, dirt and other debris can quickly accumulate around a
-            backyard pool. Keeping surrounding areas clean makes the space
-            more pleasant and can reduce the amount of unwanted material
-            entering the water.
-        </p>
-
-        <p>
-            It is also worth regularly looking over the pool area for anything
-            that could create a trip or safety concern.
-        </p>
-
-        <h2>Make Evening Swimming More Enjoyable</h2>
-
-        <p>
-            Pool lighting can change the way an outdoor area is used after
-            sunset. Properly planned lighting can improve visibility around
-            the pool while also creating a more inviting atmosphere for
-            evening entertaining.
-        </p>
-
-        <p>
-            Pool and spa lighting should be installed and maintained with
-            appropriate attention to electrical and water safety.
-        </p>
-
-        <h2>When Professional Pool Assistance Makes Sense</h2>
-
-        <p>
-            Some routine pool-care tasks are straightforward, but equipment
-            faults, persistent leaks, heating problems and electrical issues
-            may require professional attention.
-        </p>
-
-        <p>
-            Adelaide homeowners looking for professional pool-related
-            assistance can learn more about services provided by
-            <a href="http://adelaideaquaboys.com.au/">
-                Adelaide Aqua Boys
-            </a>.
-        </p>
-
-        <h2>A Simple Routine Helps</h2>
-
-        <ul>
-            <li>Check the pool water regularly.</li>
-            <li>Remove leaves and visible debris.</li>
-            <li>Keep filters and baskets maintained.</li>
-            <li>Listen for unusual equipment noises.</li>
-            <li>Look for leaks or changes in circulation.</li>
-            <li>Check the pool surrounds for potential hazards.</li>
-            <li>Arrange professional assistance when equipment problems persist.</li>
-        </ul>
-
-        <div class="note">
-            <strong>Final thought:</strong>
-            Regular attention doesn't have to be complicated. A consistent
-            routine can help Adelaide homeowners identify changes early and
-            keep their backyard pool ready for use.
+        <div class="brand-mark">
+          AP
         </div>
 
-    </article>
+        <div class="brand-text">
+          <strong>Adelaide Pool Guide</strong>
+          <span>Practical advice for local homeowners</span>
+        </div>
+
+      </a>
+
+      <div class="navlinks">
+        <a href="#care">Pool Care</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#safety">Safety</a>
+        <a href="#guide">Guide</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <span class="eyebrow">
+          Adelaide • South Australia
+        </span>
+
+        <h1>
+          A smarter way to care for your backyard pool.
+        </h1>
+
+        <p>
+          Practical, easy-to-follow information about pool maintenance,
+          equipment, lighting, safety and outdoor living for Adelaide
+          homeowners.
+        </p>
+
+        <a href="#guide" class="hero-button">
+          Explore the Guide ↓
+        </a>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <!--
+          IMPORTANT:
+          Upload your image into:
+          assets/adelaide-pool-service.jpg
+
+          If your image has another filename, change the src below.
+        -->
+
+        <img
+          src="assets/adelaide-pool-service.jpg"
+          alt="Adelaide backyard swimming pool with family and pool service information"
+        >
+
+        <div class="image-caption">
+          A backyard pool can be a great part of Adelaide outdoor living
+          when its water, equipment and surroundings are properly maintained.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BASIC CARE -->
+
+  <section id="care">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          Start With The Basics
+        </span>
+
+        <h2>
+          Three areas worth checking regularly
+        </h2>
+
+        <p>
+          A simple routine can help homeowners notice changes early
+          without trying to diagnose every problem themselves.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <article class="card">
+
+          <div class="card-icon">
+            01
+          </div>
+
+          <h3>
+            Water Condition
+          </h3>
+
+          <p>
+            Keep an eye on water clarity, debris, circulation and
+            the water-care routine recommended for your particular
+            pool system.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-icon">
+            02
+          </div>
+
+          <h3>
+            Pool Equipment
+          </h3>
+
+          <p>
+            Listen for unusual pump noises, watch for leaks and
+            notice changes in filtration or water flow.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-icon">
+            03
+          </div>
+
+          <h3>
+            Pool Surrounds
+          </h3>
+
+          <p>
+            Keep the area tidy and look for trip hazards, damaged
+            surfaces or anything that could create a safety concern.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EQUIPMENT -->
+
+  <section id="equipment" class="dark-section">
+
+    <div class="container dark-grid">
+
+      <div>
+
+        <span class="eyebrow">
+          Equipment Awareness
+        </span>
+
+        <h2>
+          Small changes can be useful warning signs.
+        </h2>
+
+        <p>
+          You don't need to become a pool technician to notice when
+          something is different. Regular observation helps you decide
+          when a problem can be handled as routine maintenance and when
+          professional assistance may be sensible.
+        </p>
+
+      </div>
+
+
+      <div class="checklist">
+
+        <div class="check">
+          <span class="check-mark">✓</span>
+          Unusual pump or motor noise
+        </div>
+
+        <div class="check">
+          <span class="check-mark">✓</span>
+          Reduced or inconsistent water circulation
+        </div>
+
+        <div class="check">
+          <span class="check-mark">✓</span>
+          Persistent leaks around equipment
+        </div>
+
+        <div class="check">
+          <span class="check-mark">✓</span>
+          Heating or lighting behaving differently
+        </div>
+
+        <div class="check">
+          <span class="check-mark">✓</span>
+          Filter pressure outside its usual range
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SAFETY -->
+
+  <section id="safety">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          Pool Safety
+        </span>
+
+        <h2>
+          Keep the whole pool area in mind
+        </h2>
+
+        <p>
+          Water quality is only one part of a safe backyard pool.
+          Pay attention to the pool surrounds, equipment and electrical
+          systems too.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <article class="card">
+
+          <div class="card-icon">
+            A
+          </div>
+
+          <h3>
+            Pool Lighting
+          </h3>
+
+          <p>
+            Good visibility can make evening use more comfortable.
+            Pool and spa electrical work should be handled with
+            appropriate professional care.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-icon">
+            B
+          </div>
+
+          <h3>
+            Equipment
+          </h3>
+
+          <p>
+            If a pump, heater or filter develops a persistent fault,
+            avoid repeatedly experimenting with unfamiliar repairs.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-icon">
+            C
+          </div>
+
+          <h3>
+            Pool Surrounds
+          </h3>
+
+          <p>
+            Keep walkways clear and address damaged surfaces or
+            other obvious hazards around the pool.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN GUIDE / BACKLINK -->
+
+  <section id="guide" class="article-section">
+
+    <div class="container article">
+
+      <span class="eyebrow">
+        Adelaide Pool Guide
+      </span>
+
+      <h2>
+        A simple routine for Adelaide pool owners
+      </h2>
+
+      <p>
+        Backyard pools can require different care depending on their
+        size, equipment and treatment system. Still, a few habits are
+        useful for most homeowners.
+      </p>
+
+
+      <h2>
+        1. Look before you clean
+      </h2>
+
+      <p>
+        Before starting routine cleaning, take a quick look at the water
+        and the equipment area. Notice changes in water clarity, debris,
+        leaks or anything that appears different from the previous visit.
+      </p>
+
+
+      <h2>
+        2. Know what normal equipment sounds like
+      </h2>
+
+      <p>
+        Pool pumps and filtration equipment make some noise during
+        operation. What matters is a noticeable change. Grinding,
+        rattling, repeated cycling or unusual vibration can be a reason
+        to investigate further.
+      </p>
+
+
+      <h2>
+        3. Keep a basic maintenance rhythm
+      </h2>
+
+      <ul>
+
+        <li>
+          Remove leaves and visible debris.
+        </li>
+
+        <li>
+          Check baskets and filters according to the equipment instructions.
+        </li>
+
+        <li>
+          Monitor water condition and follow your normal water-care routine.
+        </li>
+
+        <li>
+          Look for leaks around pumps, filters and plumbing.
+        </li>
+
+        <li>
+          Keep the pool surrounds clean and unobstructed.
+        </li>
+
+      </ul>
+
+
+      <h2>
+        4. Know when to call for help
+      </h2>
+
+      <p>
+        Persistent leaks, electrical faults, equipment failures and
+        problems that you cannot safely identify are better treated as
+        professional-service issues. The goal isn't to fix everything
+        yourself; it is to recognise when something needs attention.
+      </p>
+
+
+      <!-- ACTIVE BACKLINK -->
+
+      <div class="callout">
+
+        <strong>
+          Looking for professional pool assistance in Adelaide?
+        </strong>
+
+        <br><br>
+
+        Homeowners can learn more about pool-related maintenance,
+        equipment, lighting and other services from
+
+        <a
+          href="https://adelaideaquaboys.com.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Adelaide Aqua Boys
+        </a>.
+
+      </div>
+
+
+      <p style="font-size:13px;color:#7890a0;">
+
+        This page is an independent informational guide and is not the
+        official website of Adelaide Aqua Boys. Information is general
+        in nature; follow your pool equipment manufacturer's instructions
+        and applicable Australian safety requirements.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <h3>
+        Adelaide Pool Guide
+      </h3>
+
+      <p>
+        Practical pool-care information for Adelaide homeowners.
+      </p>
+
+      <div class="footer-bottom">
+        © 2026 Adelaide Pool Guide • Independent informational resource
+      </div>
+
+    </div>
+
+  </footer>
+
 
 </body>
 </html>
